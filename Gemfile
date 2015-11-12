@@ -44,3 +44,16 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem 'devise'
+gem 'high_voltage'
+gem 'simple_form'
+
+group :development do
+  gem 'better_errors'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
