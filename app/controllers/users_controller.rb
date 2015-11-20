@@ -12,4 +12,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def posts
+    @user = current_user
+    @posts = current_user.posts
+  end
+
+
 end

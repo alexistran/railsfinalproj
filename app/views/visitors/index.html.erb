@@ -1,2 +1,4 @@
-<h3>Welcome</h3>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered</p>
+<h1>Welcome</h1>
+<p><%= link_to 'Users:', users_path %> <%= User.count %> registered <p>
+<p><%= link_to 'Posts:', controller: 'posts' %> <%= Post.count %><p>
+<p><%= link_to 'Write a Post!', new_post_path %><p>

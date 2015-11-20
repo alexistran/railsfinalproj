@@ -1,4 +1,7 @@
 Rails.application.configure do
+
+  Paperclip.options[:command_path] = '/c/WINDOWS/system32/'
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
