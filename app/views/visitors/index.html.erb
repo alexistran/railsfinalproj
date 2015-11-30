@@ -1,4 +1,10 @@
-<h1>Welcome</h1>
-<p><%= link_to 'Users:', users_path %> <%= User.count %> registered <p>
-<p><%= link_to 'Posts:', controller: 'posts' %> <%= Post.count %><p>
-<p><%= link_to 'Write a Post!', new_post_path %><p>
+<!DOCTYPE html>
+<html>
+<body>
+	<div class="background">
+		<p><%= link_to 'Users:', users_path %> <%= User.count %> registered <p>
+		<p><%= link_to 'Posts:', controller: 'posts' %> <%= Post.count %><p>
+		<p><%= link_to 'Write a Post!', new_post_path %><p>
+	</div>
+</body>
+</html>
