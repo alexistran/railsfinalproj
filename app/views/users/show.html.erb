@@ -14,6 +14,11 @@
 	    <br> &nbsp;&nbsp; Text: <%= p.text %>
 	   <% end %> 
 
+	<h3>My Comments</h3>
+	<% @user.comments.each do |p| %>
+	    <br> &nbsp;&nbsp; Text: <%= p.body %>
+	   <% end %> 
+
 </div>
 
 </body>
