@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -22,13 +23,13 @@
 <div id="header">
 
   <% if user_signed_in? %>
-    Logged in as <strong><%= current_user.name %></strong>.
+    <div id="profile-text"> Hi <strong><%= current_user.name %></strong>! </div>
     <div class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %> </div>
     <%= link_to image_tag("logo.png", :class => 'logo'), root_path %> 
-    <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %> 
-    <%= link_to "My Posts", user_path(current_user), :class => 'navbar-link'  %>
-    <%= link_to "My Comments", posts_path, :class => 'navbar-link'  %>
-    <%= link_to "Log Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+    <%= link_to 'edit profile', edit_user_registration_path, :class => 'navbar-link', :id => 'edit-profile' %> 
+    <%= link_to "my posts", user_path(current_user), :class => 'navbar-link', :id => 'my-posts' %>
+    <%= link_to "my comments", posts_path, :class => 'navbar-link', :id => 'my-comments' %>
+    <%= link_to "log out", destroy_user_session_path, method: :delete, :class => 'navbar-link', :id => 'log-out' %>
    
   <% else %>
     <%= link_to image_tag("logo.png", :class => 'logo'), root_path %> 
@@ -36,8 +37,6 @@
     <%= link_to "log in", new_user_session_path, :class => 'navbar-link', :id => 'log-in' %>
 
   <% end %>
-
-<div id="line"> </div>
 
 </div>
 

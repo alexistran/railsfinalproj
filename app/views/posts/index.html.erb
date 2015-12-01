@@ -1,19 +1,30 @@
-<h1>All Posts</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @posts.each do |p| %>
-    <tr>
-      <td><%= p.title %></td>
-      <td><%= p.text %></td>
-      <td><%= link_to 'Show', post_path(p) %></td>
-      <td><%= link_to 'Edit', edit_post_path(p) %></td>
-    </tr>
-  <% end %>
-</table>
+<!DOCTYPE html>
+<html>
+<body>
 
-<%= link_to 'Back', :back %>
+<div class="background">
+
+  <h1>All Posts</h1>
+   
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+    </tr>
+   
+    <% @posts.each do |p| %>
+      <tr>
+        <td><%= p.title %></td>
+        <td><%= p.text %></td>
+        <td><%= link_to 'Show', post_path(p) %></td>
+        <td><%= link_to 'Edit', edit_post_path(p) %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <%= link_to 'Back', :back %>
+
+</div>
+
+</body>
+</html>
