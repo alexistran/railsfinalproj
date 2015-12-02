@@ -1,10 +1,36 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <body>
 	<div class="background">
 		<p><%= link_to 'Users:', users_path %> <%= User.count %> registered <p>
 		<p><%= link_to 'Posts:', controller: 'posts' %> <%= Post.count %><p>
-		<p><%= link_to 'Write a Post!', new_post_path %><p>
 	</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="background">
+
+  <h1>All Posts</h1>
+   
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+    </tr>
+   
+    <% @posts.each do |p| %>
+      <tr>
+        <td><%= p.title %></td>
+        <td><%= p.text %></td>
+        <td><%= link_to 'Show', post_path(p) %></td>
+      </tr>
+    <% end %>
+  </table>
+
+</div>
+
 </body>
 </html>
