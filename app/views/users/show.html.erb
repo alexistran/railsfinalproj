@@ -1,8 +1,25 @@
-<h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
-<p>Email: <%= @user.email if @user.email %></p>
+<!DOCTYPE html>
+<html>
+<body>
 
-<h3>My Posts</h3>
-<% @user.posts.each do |p| %>
-    <br> &nbsp;&nbsp; <%= p %>
-   <% end %> 
+<div class="background">
+
+	<h3>User</h3>
+	<p>Name: <%= @user.name if @user.name %></p>
+	<p>Email: <%= @user.email if @user.email %></p>
+
+	<h3>My Posts</h3>
+	<% @user.posts.each do |p| %>
+	    <br> &nbsp;&nbsp; Title: <%= p.title %>
+	    <br> &nbsp;&nbsp; Text: <%= p.text %>
+	   <% end %> 
+
+	<h3>My Comments</h3>
+	<% @user.comments.each do |p| %>
+	    <br> &nbsp;&nbsp; Text: <%= p.body %>
+	   <% end %> 
+
+</div>
+
+</body>
+</html>
