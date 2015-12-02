@@ -153,3 +153,66 @@
     margin: 40px 0px;
 }
 
+.text-field {
+    margin-left: 10%;
+    width: 80%;
+    line-height: 2;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.label-field {
+    margin-left: 10%;
+    font-size: 30px;
+    color: #4c4c4c;
+}
+
+#description {
+    height: 300px;
+}
+
+input.form-button{
+  background-color: #7F0000;
+  text-decoration: none;
+  border: none;
+  font-size:1em;
+  color: white;
+  cursor: pointer;
+  padding: 10px 32px;
+  margin-left: 37%;
+  margin-bottom: 1%;
+}
+
+#back-button {
+    position: relative;
+    left: 52%;
+    bottom: 41px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #470400;
+}
+
+input#signup-button {
+    margin-left: 21%;
+    margin-top: 4%;
+}
+
+input#logon-button {
+    margin-left: 22%;
+}
+
+a#signup-button {
+    position: relative;
+    left: 33%;
+    bottom: 64px;
+    background-color: #470400;
+}
+
+a#pswd-button {
+    position: relative;
+    left: 45%;
+    bottom: 85px;
+    background-color: #470400;
+}
