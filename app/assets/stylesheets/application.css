@@ -27,7 +27,7 @@
  	position: fixed;
  	height: 87px;
  	width: 100%;
- 	box-shadow: 0px 5px 5px 0px #3D3E3E;
+ 	box-shadow: 0px 5px 20px 0px #474748;
  	border-bottom: 3px solid white;
  }
 
@@ -101,6 +101,20 @@
 
 #log-out {
     right: 7%;
+}
+
+.button {
+    background-color: #7F0000;
+    text-decoration: none;
+    color: white;
+    padding: 10px 32px;
+    left: 46%;
+    position: absolute;
+}
+
+#login-button {
+	top: 61%;
+	background-color: #470400;
 }
 
 
