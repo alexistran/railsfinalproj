@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-
+	before_filter :authenticate_user!
 	def new
 		@comment = Comments.new
 	end
@@ -7,7 +7,9 @@ class CommentsController < ApplicationController
 	def destroy
 	    @post = Post.find(params[:post_id])
 	    @comment = @post.comments.find(params[:id])
-	    @comment.destroy
+	    if current_user.id == @comment.user_id
+			@comment.destroy
+		end
 	    redirect_to post_path(@post)
     end
 
