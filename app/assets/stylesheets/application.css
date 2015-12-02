@@ -35,11 +35,10 @@
  	margin: 0 auto;
  	height: 100%;
  	font-family: 'Nunito', sans-serif;
+ 	background-color: #004C4C;
  }
 
  .background {
- 	background-color: #004C4C;
- 	height: 100%;
  	padding-top: 100px;
  }
 
@@ -89,7 +88,7 @@
     position: absolute;
     top: 23%;
     right:7%;
-    color: white;
+    color: grey;
 }
 
 #edit-profile {
@@ -98,10 +97,6 @@
 
 #my-posts {
     left: 2%;
-}
-
-#my-comments {
-    left: 13%;
 }
 
 #log-out {
