@@ -29,6 +29,7 @@
  	width: 100%;
  	box-shadow: 0px 5px 20px 0px #474748;
  	border-bottom: 3px solid white;
+ 	z-index: 10;
  }
 
  html, body {
@@ -110,6 +111,7 @@
     padding: 10px 32px;
     left: 46%;
     position: absolute;
+    z-index: 0;
 }
 
 #login-button {
@@ -117,4 +119,37 @@
 	background-color: #470400;
 }
 
+.article-title {
+    font-weight: bold;
+    padding: 30px 50px 10px;
+    font-size: 30px;
+}
+
+.article-text {
+    color: #4C4C4C;
+    line-height: 2;
+    padding: 0px 50px 70px;
+}
+
+#read-button {
+    bottom: 44px;
+    left: 4.5%;
+    position: relative;
+}
+
+#edit-button {
+    position: relative;
+    background-color: #470400;
+    left: 6%;
+    bottom: 44px;
+}
+
+#post-title {
+    color: white;
+    padding-top: 15px;
+}
+
+#post-button {
+    margin: 40px 0px;
+}
 

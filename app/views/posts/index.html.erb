@@ -4,33 +4,26 @@
 
 <div class="background">
    
-  <div class="box">
 
-    <div class="reg-title">All Posts</div>
 
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Text</th>
-      </tr>
+    <div class="reg-title" id="post-title">All Posts</div>
      
       <% @posts.each do |p| %>
-        <tr class="space">
-          <td><%= p.title %></td>
-          <td><%= p.text %></td>
-          <td><%= link_to 'Show', post_path(p) %></td>
-          <td><%= link_to 'Edit', edit_post_path(p) %></td>
-        </tr>
+        <div class="box">
+          <div class="article-title"><%= p.title %></div>
+          <div class="article-text"><%= p.text %></div>
+          <%= link_to 'Read More', post_path(p), :class => 'button', :id => 'read-button' %>
+          <%= link_to 'Edit', edit_post_path(p), :class => 'button', :id => 'edit-button' %>
+        </div>
       <% end %>
-    </table>
 
 
 
-    <div class="button"><%= link_to 'Write a Post!', new_post_path %></div>
+    <%= link_to 'Write a Post!', new_post_path, :class => 'button', :id => 'post-button' %>
 
     <%= link_to 'Back', :back %>
 
-  </div>
+
 
 </div>
 
