@@ -37,7 +37,7 @@ Post
 ----------------
 Kim:
 
-Myra: 
+Myra: Front-End Styling and Deployment to Heroku
 
 Alexis:
 
