@@ -8,9 +8,12 @@
     <div class="reg-title" id="article-title">
       <%= @post.title %>
     </div>
-
+    <% if current_user and current_user.id == @post.user_id %>
     <%= link_to 'Edit', edit_post_path(@post), :class => 'button', :id => 'edit-show-button' %>
-     
+     <% end %>
+     <div class="article">
+      Written by: <%= @post.user.name %>
+    </div>
     <div class="article">
       <%= @post.text %>
     </div>
@@ -45,9 +48,9 @@
       </div>
 
       <p>
-      <%= link_to 'Delete Comment', [comment.post, comment],
-                   method: :delete,
-                   :class => 'button', :id => 'comment-button' %>
+        <%= link_to 'Delete Comment', [comment.post, comment],
+                     method: :delete,
+                     :class => 'button', :id => 'comment-button' %>
       </p>
 
     <% end %>
