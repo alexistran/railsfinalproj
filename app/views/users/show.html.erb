@@ -6,15 +6,19 @@
 	<div class="box">
 
 		<div class="reg-title">User</div>
-		<p>Name: <%= @user.name if @user.name %></p>
-		<p>Email: <%= @user.email if @user.email %></p>
-
+			<div class="user-info">
+				<div class="user-title">Name:</div> 
+				<div class="user-stuff"><%= @user.name if @user.name %></div>
+				<div class="user-title">Email:</div> 
+				<div class="user-stuff"><%= @user.email if @user.email %></div>
+			</div>
 		<div class="reg-title">My Posts</div>
-		<% @user.posts.each do |p| %>
-		    <br> &nbsp;&nbsp; Title: <%= p.title %>
-		    <br> &nbsp;&nbsp; Text: <%= p.text %>
-		   <% end %> 
-
+			<div class="user-info">
+				<% @user.posts.each do |p| %>
+				    <br> &nbsp;&nbsp; Title: <%= p.title %>
+				    <br> &nbsp;&nbsp; Text: <%= p.text %>
+				   <% end %> 
+			</div>
 		<div class="reg-title">My Comments</div>
 		<% @user.comments.each do |p| %>
 		    <br> &nbsp;&nbsp; Text: <%= p.body %>

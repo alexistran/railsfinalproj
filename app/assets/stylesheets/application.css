@@ -378,3 +378,22 @@ a#edit-back-button {
 #cancelacc-button {
 	background-color: #470400;
 }
+
+div.user-info {
+    margin-left: 10%;
+}
+
+.user-title {
+    font-size: 25px;
+    color: #4c4c4c;
+}
+
+.user-stuff {
+	font-size: 25px;
+	margin-bottom: 1%;
+}
+
+input#forgot-button {
+    margin-left: 7%;
+    margin-top: 10%;
+}
