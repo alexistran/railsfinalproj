@@ -334,3 +334,47 @@ a#edit-show-button {
 a#show-back-button {
     background-color: #470400;
 }
+
+input#new-post-button {
+    margin-bottom: 2%;
+}
+
+a#new-back-button {
+    bottom: -10.8%;
+    margin-left: 5%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #470400;
+}
+
+#new-box {
+	margin-bottom: 4%;
+}
+
+.form-group {
+    margin-left: 30%;
+    margin-bottom: 1%;
+    line-height: 1.5;
+}
+
+div#editprof-box {
+    padding-bottom: 5%;
+}
+
+input#update-button {
+    margin-left: 21%;
+    margin-top: 4%;
+}
+
+input#user_current_password {
+    margin-left: 2%;
+}
+
+a#edit-back-button {
+    left: 37%;
+    background-color: #470400;
+}
+
+#cancelacc-button {
+	background-color: #470400;
+}
