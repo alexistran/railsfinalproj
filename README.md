@@ -2,7 +2,9 @@ Rails Final Project
 =============
 
 **Title:** SafeSpace
+
 **Team Members:** Kim Wang, Myra Xiong, Alexis Tran, Sabrina Shie
+
 **Demo Link:** safespace.herokuapp.com 
 
 **Idea:** SafeSpace is a site for users to discuss their experiences coping with stress, anxiety, depression, and on mental illnesses in general. Users are part of a community that can offer resources to each other in terms of motivational posts, links, and/or personal experiences. Other users can comment on posts, generating further discussion. 
@@ -34,6 +36,9 @@ Post
 **Division of Labor:**
 ----------------
 Kim:
+
 Myra: 
+
 Alexis:
+
 Sabrina: 
