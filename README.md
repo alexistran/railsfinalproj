@@ -35,7 +35,7 @@ Post
 
 **Division of Labor:**
 ----------------
-Kim:
+Kim: Made Users, Comments, and Posts
 
 Myra: Front-End Styling and Deployment to Heroku
 
