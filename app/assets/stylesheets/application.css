@@ -49,7 +49,7 @@
 
  img.logo {
  	width: 20%;
- 	padding-left: 40%;
+ 	padding-left: 40.5%;
  }
 
  #sign-up {
@@ -151,6 +151,7 @@
 
 #post-button {
     margin: 40px 0px;
+    left: 44%;
 }
 
 .text-field {
@@ -214,5 +215,122 @@ a#pswd-button {
     position: relative;
     left: 45%;
     bottom: 85px;
+    background-color: #470400;
+}
+
+input#user_password {
+    margin-left: 2%;
+}
+
+input#user_email {
+    margin-left: 2%;
+}
+
+input#user_name {
+    margin-left: 2%;
+}
+
+input#user_password_confirmation {
+    margin-left: 2%;
+}
+
+span.hint {
+    margin-left: 2%;
+    color: #4c4c4c;
+}
+
+input#user_remember_me {
+    margin-right: 2%
+}
+
+div#article-title {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 40px;
+}
+
+.article {
+    line-height: 2;
+    padding: 0px 10%;
+}
+
+.addcomment-title {
+    margin-left: 10%;
+    margin-top: 7%;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+label#commenter-field {
+    font-size: 15px;
+}
+
+input#commenter-text {
+    padding: 1px;
+    margin: 1% 10%;
+    width: 76%;
+    padding-left: 10px;
+}
+
+.line {
+    width: 80%;
+    background-color: #A6AAA9;
+    height: 1px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 3%;
+}
+
+textarea#comment-text {
+    margin-top: 1%;
+    padding: 1px;
+    margin: 1% 10%;
+    width: 76%;
+    padding-left: 10px;
+}
+
+input#create-button {
+    margin-top: 1%;
+    margin-left: 41%;
+}
+
+.commenter {
+    background-color: #B2B5B4;
+    width: 77%;
+    margin-left: 10%;
+    color: white;
+    line-height: 2;
+    height: 31px;
+}
+
+.comment-body {
+    background-color: white;
+    margin-left: 10%;
+    width: 77%;
+    height: 130px;
+    position: relative;
+    line-height: 2;
+    top: -21px;
+}
+
+a#comment-button {
+	margin-left: -27%;
+	margin-top: -5.5%;
+	background-color: #470400;
+}
+
+div#show-box {
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+}
+
+a#edit-show-button {
+    left: 73%;
+    top: 23%;
+}
+
+a#show-back-button {
     background-color: #470400;
 }

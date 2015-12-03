@@ -21,6 +21,8 @@
         </div>
       <% end %>
 
+      <div class="reg-title">New Post</div>
+
       <p>
         <%= f.label :title, :class => 'label-field' %><br>
         <%= f.text_field :title, :class => 'text-field' %>
@@ -32,7 +34,7 @@
       </p>
      
       <p>
-        <%= f.submit %>
+        <%= f.submit :class => 'form-button'%>
       </p>
     <% end %>
 
