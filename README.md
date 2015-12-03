@@ -39,7 +39,7 @@ Kim: Made Users, Comments, and Posts
 
 Myra: Front-End Styling and Deployment to Heroku
 
-Alexis:
+Alexis: Gems, bugs, heroku, video demo
 
 Sabrina: Worked on Users, Comments, Posts and misc bugs
 
