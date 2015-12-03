@@ -19,6 +19,9 @@
 
     <div class="addcomment-title">ADD A COMMENT:</div>
     <%= form_for([@post, Comment.new]) do |f| %>
+      <%= f.error_messages %>
+
+
       <p>
         <%= f.label :commenter, :class => 'label-field', :id => 'commenter-field' %><br>
         <%= f.text_field :commenter, :class => 'text-field', :id => 'commenter-text' %>
