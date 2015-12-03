@@ -41,6 +41,6 @@ Myra: Front-End Styling and Deployment to Heroku
 
 Alexis:
 
-Sabrina: 
+Sabrina: Worked on Users, Comments, Posts and misc bugs
 
 
